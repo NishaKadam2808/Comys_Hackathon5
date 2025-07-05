@@ -5,20 +5,22 @@ This project uses a deep learning model built with **TensorFlow** and **MobileNe
 
 # Project Structure
 
+```text
 Task_A/
-    -gender_classifier.py # Model training, fine-tuning, evaluation
-    -test_gender_camera.py # Webcam-based gender prediction
-    -best_gender_model.h5 # Saved trained model
-    -README.md # Project documentation
-    -train/ # Training images
-        -Male/
-        -Female/
-    -val/ # Validation images
-        -Male/
-        -Female/
-    -venv/ # Python virtual environment
-    -model_architecture/ # Diagram showing model structure
-    -Result/ # Screenshots of output
+├── gender_classifier.py              # Model training and fine-tuning
+├── test_gender_camera.py             # Predict gender using webcam
+├── best_gender_model.h5              # Trained model weights
+├── README.md                         # Project documentation
+├── train/                            # Training images
+│   ├── Male/
+│   └── Female/
+├── val/                              # Validation images
+│   ├── Male/
+│   └── Female/
+├── venv/                             # Python virtual environment
+├── model_architecture/               # Image describing model architecture
+├── Result/                           # Screenshots and output metrics
+
 
 
 #  Requirements
@@ -29,17 +31,20 @@ pip install tensorflow opencv-python scikit-learn numpy
 
 
 # Model Architecture
+
 Base: MobileNetV2 pretrained on ImageNet
 
 Custom top layers:
 
-GlobalAveragePooling
+- GlobalAveragePooling
+- Dense(128) + ReLU + Dropout(0.3)
+- Output: Dense(1) + Sigmoid
 
-Dense(128) + ReLU + Dropout(0.3)
+Note : The output layer is a single neuron with sigmoid activation, returning a probability between 0 and 1 (where **> 0.5 = Female**, **< 0.5 = Male**).
 
-Output: Dense(1) + Sigmoid
 
-# Training and Evaluating the Model :
+
+# Training and evaluating the Model :
 To train the model execute following commands :
 1. .\venv\Scripts\Activate.ps1 
 
@@ -47,17 +52,10 @@ To train the model execute following commands :
 
 This will:
 
-   - Train the model with class weighting and fine-tuning
-   - Evaluate on validation data
-   - Save the model to best_gender_model.h5
-   - Generate classification report and confusion matrix
-
-
-
-
-
-
-
+    Train the model with class weighting and fine-tuning
+    Evaluate on validation data
+    Save the model to best_gender_model.h5
+    Generate classification report and confusion matrix
 
 
 # Predicting from Webcam
@@ -76,6 +74,15 @@ It detects the face, predicts gender, and shows the result with confidence.
 
 Predicted Gender: Female (96.73% confidence)
 
-# Author
-Nisha
-mail: kadamnisha663@gmail.com
+
+
+# Authors
+
+- **Nisha Kadam**  
+  Email: kadamnisha663@gmail.com
+
+- **Kanchan Garad**  
+  Email: garadkanchan05@gmail.com
+
+- **Shraddha Nikam**  
+  Email: shraddhanikam2005@gmail.com
