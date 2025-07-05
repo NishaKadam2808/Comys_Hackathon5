@@ -5,7 +5,7 @@
 This project builds a face recognition system capable of verifying identities, even from distorted or altered face images.
 
 # Project Structure
-
+```text
 Task_B/
 ├── train/                         # Folder with clean reference identity images
 ├── distorted_output/              # Will be created for storing distorted images
@@ -16,6 +16,7 @@ Task_B/
 ├── README.md
 |__ venv/
 |__ submission_results
+```
 
 # Task Objective
 - Identify whether a distorted image matches any identity in the `train` folder.
@@ -35,7 +36,7 @@ Step 1 : Before executing following commands execute :  .\venv\Scripts\Activate.
 Step 2 : Generate Distorted Images
          python Inference_Pipeline_Code_for_Face_Verification.py
 
-Step 3:  Train the Face Recognition Model
+Step 3:  Train and evaluate the Face Recognition Model
          python training_script.py
          # The model will be saved as face_recognition_model.h5
 
@@ -62,6 +63,13 @@ Step 4:  Run Face Verification on Distorted Images
 
 
 
-# Author
-Nisha
-mail: kadamnisha663@gmail.com
+# Authors
+
+- **Nisha Kadam**  
+  Email: kadamnisha663@gmail.com
+
+- **Kanchan Garad**  
+  Email: garadkanchan05@gmail.com
+
+- **Shraddha Nikam**  
+  Email: shraddhanikam2005@gmail.com
