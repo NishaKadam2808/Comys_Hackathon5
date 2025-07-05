@@ -10,12 +10,8 @@ from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 from sklearn.metrics import classification_report, confusion_matrix
 
 # Paths
-#train_dir = 'train'
-#val_dir = 'val'
-train_dir = 'D:/face/Comys_Hackathon5/Task_A/train'
-
-val_dir = 'D:/face/Comys_Hackathon5/Task_A/val'
-
+train_dir = 'train'
+val_dir = 'val'
 
 
 image_size = 224
@@ -102,7 +98,7 @@ with open("validation_classification_report.txt", "w") as f:
 
 # Optional: show confusion matrix
 cm = confusion_matrix(y_true, y_pred)
-print("\nConfusion Matrix:")
+print("\n Confusion Matrix:")
 print(cm)
 
 print("\n Model training complete. Metrics and report saved. Best model: 'best_gender_model.h5'")
