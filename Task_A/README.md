@@ -21,7 +21,7 @@ Task_A/
 ├── model_architecture/               # Image describing model architecture
 ├── Result/                           # Screenshots and output metrics
 
-
+```
 
 #  Requirements
 
