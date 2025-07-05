@@ -6,21 +6,19 @@ This project uses a deep learning model built with **TensorFlow** and **MobileNe
 # Project Structure
 
 Task_A/
-├── gender_classifier.py # Model training and fine-tuning
-├── evaluate_gender_model.py # Evaluation on test data (accuracy, precision, recall, F1)
-├── test_gender_camera.py # Predict gender using webcam
-├── best_gender_model.h5 # Trained model weights
+├── gender_classifier.py # Model training, fine-tuning, evaluation
+├── test_gender_camera.py # Webcam-based gender prediction
+├── best_gender_model.h5 # Saved trained model
 ├── README.md # Project documentation
-├── train/
+├── train/ # Training images
 │ ├── Male/
 │ └── Female/
-├── val/
+├── val/ # Validation images
 │ ├── Male/
 │ └── Female/
-|__venv
-|__model_architecture #image describing architecture of our model
-|__Result #screenshot of output and accuracy matrics
-
+├── venv/ # Python virtual environment
+├── model_architecture/ # Diagram showing model structure
+├── Result/ # Screenshots and evaluation output 
 
 #  Requirements
 
@@ -40,27 +38,25 @@ Dense(128) + ReLU + Dropout(0.3)
 
 Output: Dense(1) + Sigmoid
 
-# Training the Model :
+# Training and Evaluating the Model :
 To train the model execute following commands :
 1. .\venv\Scripts\Activate.ps1 
 
 2. python gender_classifier.py
 
-# The model will be saved as best_gender_model.h5
+This will:
+
+   - Train the model with class weighting and fine-tuning
+   - Evaluate on validation data
+   - Save the model to best_gender_model.h5
+   - Generate classification report and confusion matrix
 
 
-# Evaluating the Model
-To evaluate the trained model on a test dataset :
-1. .\venv\Scripts\Activate.ps1 
-
-2. python evaluate_gender_model.py
 
 
---- Evaluation Metrics on Test Set ---
-Accuracy : 97.62%
-Precision: 96.88%
-Recall   : 98.24%
-F1-Score : 97.55%
+
+
+
 
 
 # Predicting from Webcam
