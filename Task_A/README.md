@@ -5,20 +5,7 @@ This project uses a deep learning model built with **TensorFlow** and **MobileNe
 
 # Project Structure
 
-Task_A/
-├── gender_classifier.py # Model training, fine-tuning, evaluation
-├── test_gender_camera.py # Webcam-based gender prediction
-├── best_gender_model.h5 # Saved trained model
-├── README.md # Project documentation
-├── train/ # Training images
-│ ├── Male/
-│ └── Female/
-├── val/ # Validation images
-│ ├── Male/
-│ └── Female/
-├── venv/ # Python virtual environment
-├── model_architecture/ # Diagram showing model structure
-├── Result/ # Screenshots and evaluation output 
+<pre> ## Project Structure ``` Task_A/ ├── gender_classifier.py # Model training, fine-tuning, evaluation ├── test_gender_camera.py # Webcam-based gender prediction ├── best_gender_model.h5 # Saved trained model ├── README.md # Project documentation ├── train/ # Training images │ ├── Male/ │ └── Female/ ├── val/ # Validation images │ ├── Male/ │ └── Female/ ├── venv/ # Python virtual environment ├── model_architecture/ # Diagram showing model structure ├── Result/ # Screenshots and evaluation output ``` </pre>
 
 #  Requirements
 
