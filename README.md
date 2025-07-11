@@ -52,7 +52,7 @@ This will:
   * `taskA_report.txt`
   * `taskB_report.txt`
 
-## 📄 Output Format
+# Output Format
 
 Each report contains:
 
@@ -89,12 +89,12 @@ weighted avg     0.9348    0.9361    0.9345      1926
 # Team Members
 
 * **Nisha Kadam**
-  📧 [kadamnisha663@gmail.com](mailto:kadamnisha663@gmail.com)
+   [kadamnisha663@gmail.com](mailto:kadamnisha663@gmail.com)
 
 * **Kanchan Garad**
-  📧 [garadkanchan05@gmail.com](mailto:garadkanchan05@gmail.com)
+   [garadkanchan05@gmail.com](mailto:garadkanchan05@gmail.com)
 
 * **Shraddha Nikam**
-  📧 [shraddhanikam2005@gmail.com](mailto:shraddhanikam2005@gmail.com)
+   [shraddhanikam2005@gmail.com](mailto:shraddhanikam2005@gmail.com)
 
 
