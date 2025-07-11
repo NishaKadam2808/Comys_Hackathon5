@@ -18,7 +18,7 @@ def evaluate_model(model, data_gen, class_mode='binary'):
     return report
 
 def run_task_a(task_a_path):
-    print("🔍 Running Task A: Gender Classification")
+    print("Running Task A: Gender Classification")
     model_path = os.path.join("Task_A", "best_gender_model.h5")
     model = load_model(model_path)
 
@@ -32,14 +32,14 @@ def run_task_a(task_a_path):
     )
 
     report = evaluate_model(model, generator, class_mode='binary')
-    print("\n📊 Task A Classification Report:\n")
+    print("\nTask A Classification Report:\n")
     print(report)
 
     with open("taskA_report.txt", "w") as f:
         f.write(report)
 
 def run_task_b(task_b_path):
-    print("🔍 Running Task B: Face Recognition")
+    print(" Running Task B: Face Recognition")
     model_path = os.path.join("Task_B", "face_recognition_model.h5")
     model = load_model(model_path)
 
@@ -53,7 +53,7 @@ def run_task_b(task_b_path):
     )
 
     report = evaluate_model(model, generator, class_mode='categorical')
-    print("\n📊 Task B Classification Report:\n")
+    print("\n Task B Classification Report:\n")
     print(report)
 
     with open("taskB_report.txt", "w") as f:
